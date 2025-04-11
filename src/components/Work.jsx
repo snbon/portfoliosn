@@ -11,6 +11,7 @@ const Work = () => {
             Work
           </p>
           <p className='py-6'> Check out some of my recent work</p>
+          <p> !Expo projects are depricated - New Full Stack project uploading very soon! </p>    
         </div>
 
 {/* Container */}
@@ -86,11 +87,7 @@ const Work = () => {
                 </a>
               </div>
             </div>
-          </div>  
-
-
-          <p> Full stack project uploading soon with stack: JS, Express, NodeJs, authentication and more </p>    
-         
+          </div>           
         </div>
       </div>
     </div>

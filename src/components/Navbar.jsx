@@ -99,7 +99,7 @@ const Navbar = () => {
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'>
             <a
               className='flex justify-between items-center w-full text-gray-300'
-              href='https://www.linkedin.com/in/sweaniznoubagh/' target='_blank' rel='noreferrer'
+              href='https://www.linkedin.com/in/baghsnnn/' target='_blank' rel='noreferrer'
             >
               Linkedin <FaLinkedin size={30} />
             </a>
@@ -108,7 +108,7 @@ const Navbar = () => {
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]'>
             <a
               className='flex justify-between items-center w-full text-gray-300'
-              href='https://github.com/Swnzz' target='_blank' rel='noreferrer'
+              href='https://github.com/snbon' target='_blank' rel='noreferrer'
             >
               Github <FaGithub size={30} />
             </a>
@@ -126,7 +126,7 @@ const Navbar = () => {
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]'>
             <a
               className='flex justify-between items-center w-full text-gray-300'
-              href='https://linktr.ee/swnz' target='_blank' rel='noreferrer'
+              href='https://linktr.ee/baghsnn' target='_blank' rel='noreferrer'
             >
               More links <FaLink size={30} />
             </a>

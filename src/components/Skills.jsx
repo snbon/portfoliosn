@@ -16,6 +16,9 @@ import Java from '../assets/java.png';
 import Vue from '../assets/vue.png';
 import Mysql from '../assets/mysql.png'
 import Vuetify from '../assets/vuetify.png';
+import Net from '../assets/net.png';
+import Csharp from '../assets/csharp.png';
+
 
 const Skills = () => {
   return (
@@ -28,14 +31,6 @@ const Skills = () => {
           </div>
 
           <div className='w-full grid grid-cols-2 sm:grid-cols-3 gap-4 text-center py-8'>
-              <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                  <img className='w-14 sm:w-20 mx-auto' src={HTML} alt="HTML icon" />
-                  <p className='my-4'>HTML</p>
-              </div>
-              <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                  <img className='w-14 sm:w-20 mx-auto' src={CSS} alt="HTML icon" />
-                  <p className='my-4'>CSS</p>
-              </div>
               <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
                   <img className='w-14 sm:w-20 mx-auto' src={JavaScript} alt="HTML icon" />
                   <p className='my-4'>JAVASCRIPT</p>
@@ -53,16 +48,12 @@ const Skills = () => {
                   <p className='my-4'>VUETIFY</p>
               </div>
               <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                  <img className='w-14 sm:w-20 mx-auto' src={Tailwind} alt="HTML icon" />
-                  <p className='my-4'>TAILWIND CSS</p>
+                  <img className='w-14 sm:w-20 mx-auto' src={Csharp} alt="HTML icon" />
+                  <p className='my-4'>C#</p>
               </div>
               <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                  <img className='w-14 sm:w-20 mx-auto' src={Sass} alt="HTML icon" />
-                  <p className='my-4'>SASS</p>
-              </div>
-              <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                  <img className='w-14 sm:w-20 mx-auto' src={Typescript} alt="HTML icon" />
-                  <p className='my-4'>TYPESCRIPT</p>
+                  <img className='w-14 sm:w-20 mx-auto' src={Net} alt="HTML icon" />
+                  <p className='my-4'>.NET</p>
               </div>
               <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
                   <img className='w-14 sm:w-20 mx-auto' src={Laravel} alt="HTML icon" />
@@ -79,6 +70,26 @@ const Skills = () => {
               <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
                   <img className='w-14 sm:w-20 mx-auto' src={Firebase} alt="HTML icon" />
                   <p className='my-4'>Firebase</p>
+              </div>
+              <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+                  <img className='w-14 sm:w-20 mx-auto' src={HTML} alt="HTML icon" />
+                  <p className='my-4'>HTML</p>
+              </div>
+              <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+                  <img className='w-14 sm:w-20 mx-auto' src={CSS} alt="HTML icon" />
+                  <p className='my-4'>CSS</p>
+              </div>
+              <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+                  <img className='w-14 sm:w-20 mx-auto' src={Typescript} alt="HTML icon" />
+                  <p className='my-4'>TYPESCRIPT</p>
+              </div>
+              <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+                  <img className='w-14 sm:w-20 mx-auto' src={Tailwind} alt="HTML icon" />
+                  <p className='my-4'>TAILWIND CSS</p>
+              </div>
+              <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+                  <img className='w-14 sm:w-20 mx-auto' src={Sass} alt="HTML icon" />
+                  <p className='my-4'>SASS</p>
               </div>
             
           </div>
