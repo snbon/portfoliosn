@@ -4,15 +4,12 @@ import HTML from '../assets/html.png';
 import CSS from '../assets/css.png';
 import JavaScript from '../assets/javascript.png';
 import ReactImg from '../assets/react.png';
-import Node from '../assets/node.png';
 import Tailwind from '../assets/tailwind.png';
-import Mongo from '../assets/mongo.png';
 import Laravel from '../assets/laravel.png';
 import PHP from '../assets/php.png';
 import Firebase from '../assets/firebase.png';
 import Typescript from '../assets/typescript.png';
 import Sass from '../assets/sass.png';
-import Java from '../assets/java.png';
 import Vue from '../assets/vue.png';
 import Mysql from '../assets/mysql.png'
 import Vuetify from '../assets/vuetify.png';

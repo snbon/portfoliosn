@@ -38,14 +38,3 @@ const About = () => {
 };
 
 export default About;
-
-
-{/* <div className= 'flex justify-center items-center'> 
-<a
-  href="../pdf/cvsweaniz.pdf" 
-  download
->
- <button className='text-center rounded-lg px-4 py-3 m-2  bg-white text-gray-700 font-bold text-md hover:bg-gray-300 hover:scale-110 duration-500'>
-  Download my CV
- </button>
-</a> </div> */}
