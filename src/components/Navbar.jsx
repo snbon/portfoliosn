@@ -6,9 +6,66 @@ import {
   FaGithub,
   FaLink
 } from 'react-icons/fa';
+import {
+  IconBrandGithub,
+  IconBrandLinkedin,
+  IconBrandX,
+  IconExchange,
+  IconHome,
+  IconLink,
+  IconMail,
+  IconNewSection,
+  IconTerminal2,
+} from "@tabler/icons-react";
+
 import Logo from '../assets/logosn.png';
 import { HiOutlineMail } from 'react-icons/hi';
 import { Link } from 'react-scroll';
+import { FloatingDock } from './ui/floating-dock';
+
+const links = [
+  {
+    title: "Home",
+    icon: (
+      <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+    ),
+    href: "/",
+  },
+
+  {
+    title: "LinkedIn",
+    icon: (
+      <IconBrandLinkedin className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+    ),
+    href: "https://www.linkedin.com/in/baghsnnn/ ",
+    target: "_blank'",
+  },
+  {
+    title: "Github",
+    icon: (
+      <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+    ),
+    href:"https://github.com/snbon",
+    target: "_blank'",
+  },
+  {
+    title: "Email",
+    icon: (
+      <IconMail className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+    ),
+    href: "mailto: sweaniz@icloud.com",
+    target: "_blank'",
+  },
+
+  {
+    title: "More links",
+    icon: (
+      <IconLink className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+    ),
+    href: "https://linktr.ee/baghsnn",
+    target: "_blank'",
+  },
+];
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -93,46 +150,13 @@ const Navbar = () => {
         </li>
       </ul>
 
-      {/* Social icons */}
-      <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
-        <ul>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'>
-            <a
-              className='flex justify-between items-center w-full text-gray-300'
-              href='https://www.linkedin.com/in/baghsnnn/' target='_blank' rel='noreferrer'
-            >
-              Linkedin <FaLinkedin size={30} />
-            </a>
-          </li>
+      <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
+      <FloatingDock
+        mobileClassName="" 
+        items={links}
+      />
+    </div>
 
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]'>
-            <a
-              className='flex justify-between items-center w-full text-gray-300'
-              href='https://github.com/snbon' target='_blank' rel='noreferrer'
-            >
-              Github <FaGithub size={30} />
-            </a>
-          </li>
-     
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'>
-            <a
-              className='flex justify-between items-center w-full text-gray-300'
-              href='mailto: sweaniz@icloud.com'target='_blank' rel='noreferrer'
-            >
-              Email <HiOutlineMail size={30} />
-            </a>
-          </li>
-
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]'>
-            <a
-              className='flex justify-between items-center w-full text-gray-300'
-              href='https://linktr.ee/baghsnn' target='_blank' rel='noreferrer'
-            >
-              More links <FaLink size={30} />
-            </a>
-          </li>
-        </ul>
-      </div>
     </div>
   );
 };
