@@ -27,7 +27,7 @@ const Work = () => {
             {/* Hover Effects */}
             <div className='opacity-0 group-hover:opacity-100 duration-300'>
               <div className='text-xl font-bold text-white tracking-wider text-center align-middle p-3'>
-                ShiftEnd: Het digitale dagontvangstboek. <br/> The software will be released after the approval of FOD Financiën.
+                ShiftEnd: Het digitale dagontvangstboek. <br/> The software will be released after the approval of FOD Financiën.<br/> Techstack landing page: ReactJs, Tailwind
               </div>
               <div className='pt-8 text-center'>
                 <a href='https://shiftend.be/' target="_blank" rel='noreferrer' >

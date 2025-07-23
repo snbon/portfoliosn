@@ -3,7 +3,6 @@ import { HiArrowNarrowRight } from 'react-icons/hi';
 import { Link } from 'react-scroll';
 import { TextHoverEffect } from './ui/text-hover-effect';
 import { TextGenerateEffect } from './ui/text-generate-effect';
-import { BackgroundLines } from './ui/background-lines';
 
 const jobTitle = "I'm a Full-Stack Developer"
 const words = "Dedicated to creating impactful and innovative digital solutions that drive success in the tech industry. With a focus on building responsive, user-friendly web applications, I blend creativity with technical expertise to deliver seamless digital experiences."
@@ -20,7 +19,6 @@ const Home = () => {
               <TextHoverEffect text="Sweaniz N." />
         </div>
         <div>
-        <BackgroundLines>
         <div> 
         <TextGenerateEffect words={jobTitle}
           className="text-2xl sm:text-4xl text-[#8892b0]"
@@ -31,7 +29,6 @@ const Home = () => {
           className="text-[#ffffff] pb-2"
         />
         </div>
-        </BackgroundLines>
         </div>
         <div>
           <button  className='text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-yellow-600 hover:border-yellow-600 duration-300'>
