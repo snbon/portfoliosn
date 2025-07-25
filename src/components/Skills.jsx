@@ -1,4 +1,5 @@
 import React from 'react';
+import TiltedCard from './ui/tilted-card';
 
 import HTML from '../assets/html.png';
 import CSS from '../assets/css.png';
@@ -16,80 +17,52 @@ import Vuetify from '../assets/vuetify.png';
 import Net from '../assets/net.png';
 import Csharp from '../assets/csharp.png';
 
-
 const Skills = () => {
-  return (
-    <div name='skills' className='w-full h-full sm:h-screen bg-[#0a192f] text-gray-300 '>
-      {/* Container */}
-      <div className='max-w-[1000px] mx-auto p-4  flex flex-col justify-center w-full h-full '>
-          <div>
-              <p className='text-4xl font-bold inline border-b-4 border-yellow-600 '>Skills</p>
-              <p className='py-4'>These are the technologies I've worked with</p>
-          </div>
+  const skillsData = [
+    { name: 'JavaScript', image: JavaScript },
+    { name: 'React', image: ReactImg },
+    { name: 'Vue', image: Vue },
+    { name: 'TypeScript', image: Typescript },
+    { name: 'C#', image: Csharp },
+    { name: '.NET', image: Net },
+    { name: 'Laravel', image: Laravel },
+    { name: 'PHP', image: PHP },
+    { name: 'MySQL', image: Mysql },
+    { name: 'Firebase', image: Firebase },
+    { name: 'HTML', image: HTML },
+    { name: 'CSS', image: CSS },
+    { name: 'Tailwind CSS', image: Tailwind },
+    { name: 'Sass', image: Sass },
+    { name: 'Vuetify', image: Vuetify },
+  ];
 
-          <div className='w-full grid grid-cols-2 sm:grid-cols-3 gap-4 text-center py-8'>
-              <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                  <img className='w-14 sm:w-20 mx-auto' src={JavaScript} alt="HTML icon" />
-                  <p className='my-4'>JAVASCRIPT</p>
-              </div>
-              <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                  <img className='w-14 sm:w-20 mx-auto' src={ReactImg} alt="HTML icon" />
-                  <p className='my-4'>REACT</p>
-              </div>
-              <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                  <img className='w-14 sm:w-20 mx-auto' src={Vue} alt="HTML icon" />
-                  <p className='my-4'>VUE</p>
-              </div>
-              <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                  <img className='w-14 sm:w-20 mx-auto' src={Vuetify} alt="HTML icon" />
-                  <p className='my-4'>VUETIFY</p>
-              </div>
-              <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                  <img className='w-14 sm:w-20 mx-auto' src={Csharp} alt="HTML icon" />
-                  <p className='my-4'>C#</p>
-              </div>
-              <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                  <img className='w-14 sm:w-20 mx-auto' src={Net} alt="HTML icon" />
-                  <p className='my-4'>.NET</p>
-              </div>
-              <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                  <img className='w-14 sm:w-20 mx-auto' src={Laravel} alt="HTML icon" />
-                  <p className='my-4'>LARAVEL</p>
-              </div>
-              <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                  <img className='w-14 sm:w-20 mx-auto' src={PHP} alt="HTML icon" />
-                  <p className='my-4'>PHP</p>
-              </div>
-              <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                  <img className='w-14 sm:w-20 mx-auto' src={Mysql} alt="HTML icon" />
-                  <p className='my-4'>MYSQL</p>
-              </div>
-              <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                  <img className='w-14 sm:w-20 mx-auto' src={Firebase} alt="HTML icon" />
-                  <p className='my-4'>Firebase</p>
-              </div>
-              <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                  <img className='w-14 sm:w-20 mx-auto' src={HTML} alt="HTML icon" />
-                  <p className='my-4'>HTML</p>
-              </div>
-              <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                  <img className='w-14 sm:w-20 mx-auto' src={CSS} alt="HTML icon" />
-                  <p className='my-4'>CSS</p>
-              </div>
-              <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                  <img className='w-14 sm:w-20 mx-auto' src={Typescript} alt="HTML icon" />
-                  <p className='my-4'>TYPESCRIPT</p>
-              </div>
-              <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                  <img className='w-14 sm:w-20 mx-auto' src={Tailwind} alt="HTML icon" />
-                  <p className='my-4'>TAILWIND CSS</p>
-              </div>
-              <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                  <img className='w-14 sm:w-20 mx-auto' src={Sass} alt="HTML icon" />
-                  <p className='my-4'>SASS</p>
-              </div>
-            
-          </div>
+  return (
+    <div name='skills' className='w-full min-h-screen bg-[#0a192f] text-gray-300'>
+      {/* Container */}
+      <div className='max-w-[1200px] mx-auto p-4 flex flex-col justify-center w-full min-h-screen'>
+        <div className='text-center mb-12'>
+          <p className='text-4xl font-bold inline border-b-4 border-yellow-600'>Skills</p>
+          <p className='py-4 text-lg'>These are the technologies I've worked with</p>
+        </div>
+
+        {/* Skills Grid */}
+        <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 justify-items-center'>
+          {skillsData.map((skill, index) => (
+            <TiltedCard
+              key={skill.name}
+              imageSrc={skill.image}
+              altText={`${skill.name} icon`}
+              captionText={skill.name}
+              containerHeight="180px"
+              containerWidth="140px"
+              imageHeight="60px"
+              imageWidth="60px"
+              scaleOnHover={1.1}
+              rotateAmplitude={15}
+              showTooltip={true}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );
