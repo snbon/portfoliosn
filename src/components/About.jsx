@@ -15,12 +15,12 @@ const About = () => {
           <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
             <div >
               <p className='sm:text-right text-4xl font-bold'>Welcome to my portfolio. Please take a look around.</p> 
-              <div className= 'pt-4 flex justify-start items-start sm:justify-end sm:items-end'> 
+         {/*      <div className= 'pt-4 flex justify-start items-start sm:justify-end sm:items-end'> 
                     <a href="../pdf/cvsweaniz.pdf" download>
                     <button className='text-center rounded-lg px-4 py-3 m-2  bg-white text-gray-700 font-bold text-md hover:bg-gray-300 hover:scale-110 duration-500'>
                       View CV
                     </button> </a>
-               </div>
+               </div> */}
             </div>
             <div>
               <p>With a strong foundation in software development, complemented by experience in marketing, branding, and management, 
