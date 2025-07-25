@@ -3,6 +3,7 @@ import { HiArrowNarrowRight } from 'react-icons/hi';
 import { Link } from 'react-scroll';
 import { TextHoverEffect } from './ui/text-hover-effect';
 import { TextGenerateEffect } from './ui/text-generate-effect';
+import TextType from './ui/text-type';
 
 const jobTitle = "I'm a Full-Stack Developer"
 const words = "Dedicated to creating impactful and innovative digital solutions that drive success in the tech industry. With a focus on building responsive, user-friendly web applications, I blend creativity with technical expertise to deliver seamless digital experiences."
@@ -20,8 +21,15 @@ const Home = () => {
         </div>
         <div>
         <div> 
-        <TextGenerateEffect words={jobTitle}
+        <TextType 
+          text={jobTitle}
           className="text-2xl sm:text-4xl text-[#8892b0]"
+          typingSpeed={75}
+          pauseDuration={1500}
+          deletingSpeed={50}
+          loop={false}
+          showCursor={true}
+          cursorCharacter="_"
         />
         </div>
         <div>
