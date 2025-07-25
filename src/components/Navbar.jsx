@@ -9,12 +9,37 @@ import {
 import Logo from '../assets/logosn.png';
 import { HiOutlineMail } from 'react-icons/hi';
 import { Link } from 'react-scroll';
+import Dock from './ui/dock';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
 
+  const dockItems = [
+    { 
+      icon: <FaLinkedin size={24} />, 
+      label: 'LinkedIn', 
+      onClick: () => window.open('https://www.linkedin.com/in/baghsnnn/', '_blank')
+    },
+    { 
+      icon: <FaGithub size={24} />, 
+      label: 'Github', 
+      onClick: () => window.open('https://github.com/snbon', '_blank')
+    },
+    { 
+      icon: <HiOutlineMail size={24} />, 
+      label: 'Email', 
+      onClick: () => window.open('mailto:sweaniz@icloud.com', '_blank')
+    },
+    { 
+      icon: <FaLink size={24} />, 
+      label: 'More Links', 
+      onClick: () => window.open('https://linktr.ee/baghsnn', '_blank')
+    },
+  ];
+
   return (
+    
     <div className='fixed w-full h-[90px] flex justify-between items-center px-12 bg-[#0a192f] text-gray-300'>
       <div>
       <img src={Logo} alt='Logo' style={{ width: '25px' }} />
@@ -93,45 +118,15 @@ const Navbar = () => {
         </li>
       </ul>
 
-      {/* Social icons */}
-      <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
-        <ul>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'>
-            <a
-              className='flex justify-between items-center w-full text-gray-300'
-              href='https://www.linkedin.com/in/baghsnnn/' target='_blank' rel='noreferrer'
-            >
-              Linkedin <FaLinkedin size={30} />
-            </a>
-          </li>
-
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]'>
-            <a
-              className='flex justify-between items-center w-full text-gray-300'
-              href='https://github.com/snbon' target='_blank' rel='noreferrer'
-            >
-              Github <FaGithub size={30} />
-            </a>
-          </li>
-     
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'>
-            <a
-              className='flex justify-between items-center w-full text-gray-300'
-              href='mailto: sweaniz@icloud.com'target='_blank' rel='noreferrer'
-            >
-              Email <HiOutlineMail size={30} />
-            </a>
-          </li>
-
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]'>
-            <a
-              className='flex justify-between items-center w-full text-gray-300'
-              href='https://linktr.ee/baghsnn' target='_blank' rel='noreferrer'
-            >
-              More links <FaLink size={30} />
-            </a>
-          </li>
-        </ul>
+      {/* Dock - replaces the old social icons */}
+      <div className='hidden lg:flex fixed bottom-4 left-1/2 transform -translate-x-1/2 z-[99999]'>
+        <Dock 
+          items={dockItems}
+          panelHeight={68}
+          baseItemSize={50}
+          magnification={70}
+          className="bg-[#0a192f] border-gray-600"
+        />
       </div>
     </div>
   );
