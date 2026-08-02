@@ -48,6 +48,7 @@ const About = () => {
               scaleOnHover={1.1}
               rotateAmplitude={15}
               showTooltip={true}
+              showMobileWarning={false}
             />
           </Reveal>
         ))}
