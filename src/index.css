@@ -2,29 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
 
 @layer base {
     body {
-        @apply font-[Raleway];
+        @apply bg-ink text-paper font-body;
     }
-    li {
-        @apply px-4;
-        @apply cursor-pointer
+    h1, h2, h3, h4 {
+        @apply font-display;
     }
 }
 
-.content-div {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 250px;
+/* thin custom scrollbar, fits the dark theme better than the browser default */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #070707;
+}
+::-webkit-scrollbar-thumb {
+    background: #2a2a2a;
+    border-radius: 999px;
 }
 
-.content-div:hover {
-    background-image: linear-gradient(
-        to right,
-        rgba(112, 157, 255, 0.8),
-        hsla(242, 74%, 61%, 0.8)   
-    )!important;
+/* spotlight card hover glow, see ui/spotlight-card.jsx */
+.spotlight-card:hover .spotlight-glow {
+    opacity: 1;
+}
+
+.spotlight-glow {
+    background: radial-gradient(
+        400px circle at var(--mouse-x) var(--mouse-y),
+        var(--spotlight-color),
+        transparent 70%
+    );
+}
+
+/* endless horizontal ticker, see ui/marquee.jsx */
+@keyframes marquee-scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+.marquee-track {
+    animation: marquee-scroll linear infinite;
 }
