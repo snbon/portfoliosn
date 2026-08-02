@@ -18,7 +18,7 @@ export const projects = [
       'Baghlabs is the software studio I run. We take products from idea to production for clients across development, branding and AI.',
     category: 'dev',
     featured: false,
-    year: '2024 - present',
+    year: '2025 - present',
     technologies: ['React', 'Vite', 'Tailwind CSS', 'GSAP', 'Node.js'],
     hero: caseImg('baghlabs', 'hero'),
     gallery: [caseImg('baghlabs', 'hero')],
@@ -34,7 +34,7 @@ export const projects = [
       'Dagontvangst is a SaaS tool that simplifies compliance for Belgian restaurants by replacing the traditional paper dagontvangstenboek with a sleek, affordable, legally compliant platform.',
     category: 'dev',
     featured: true,
-    year: '2024',
+    year: '2026',
     technologies: ['PHP', 'Laravel', 'Vue.js', 'PostgreSQL', 'Railway'],
     features: [
       'Multi location support',
@@ -65,7 +65,7 @@ export const projects = [
       'Availly is a lightweight tool for managing personal and business availability, with a sleek calendar UI and powerful sharing features.',
     category: 'dev',
     featured: true,
-    year: '2024',
+    year: '2025',
     technologies: ['React', 'Laravel', 'PostgreSQL', 'Tailwind CSS'],
     features: [
       'Shareable booking links',
@@ -92,7 +92,7 @@ export const projects = [
     description:
       'Full website build from the ground up, including a custom multilingual group booking system and a per-guest pre-ordering menu, in 4 languages.',
     category: 'dev',
-    year: '2024',
+    year: '2025',
     technologies: ['Next.js', 'Tailwind CSS'],
     features: [
       'Group booking flow for 6+ guests',
@@ -119,7 +119,7 @@ export const projects = [
     description:
       'Full website build for a church community: color palette, web design and a Next.js site with Sanity CMS, fully bilingual (NL/EN) so the team can manage everything themselves.',
     category: 'dev',
-    year: '2024',
+    year: '2026',
     technologies: ['Next.js', 'Sanity CMS', 'Tailwind CSS'],
     features: [
       'Sanity CMS with bilingual content types',
@@ -142,7 +142,7 @@ export const projects = [
       'A dedicated support portal for Baghlabs clients to submit tickets, track progress and stay in the loop, all synced with GitHub Issues behind the scenes.',
     category: 'dev',
     featured: true,
-    year: '2024',
+    year: '2026',
     technologies: ['Next.js', 'Supabase', 'GitHub API', 'Tailwind CSS'],
     features: [
       'Ticket management with client invitations',
