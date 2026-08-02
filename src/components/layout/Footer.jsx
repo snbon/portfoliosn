@@ -1,5 +1,4 @@
 import { FaLinkedin, FaGithub, FaLink } from 'react-icons/fa';
-import { HiOutlineMail } from 'react-icons/hi';
 import { Link } from 'react-router-dom';
 
 const socials = [
