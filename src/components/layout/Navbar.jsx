@@ -26,6 +26,12 @@ const Navbar = () => {
     return () => ctx.revert();
   }, []);
 
+  // lock page scroll while the fullscreen menu is open
+  useEffect(() => {
+    document.body.style.overflow = open ? 'hidden' : '';
+    return () => { document.body.style.overflow = ''; };
+  }, [open]);
+
   // close the mobile menu whenever a link is clicked
   const closeMenu = () => setOpen(false);
 
@@ -59,7 +65,7 @@ const Navbar = () => {
         {/* mobile burger */}
         <button
           onClick={() => setOpen(!open)}
-          className="md:hidden flex flex-col gap-1.5 z-50"
+          className="md:hidden flex flex-col gap-1.5 relative z-[60]"
           aria-label="Toggle menu"
         >
           <span className={`block h-0.5 w-7 bg-paper transition-transform duration-300 ${open ? 'rotate-45 translate-y-2' : ''}`} />
@@ -70,7 +76,7 @@ const Navbar = () => {
 
       {/* mobile fullscreen menu */}
       <div
-        className={`md:hidden fixed inset-0 bg-ink flex flex-col justify-center items-center gap-8 transition-opacity duration-300 ${
+        className={`md:hidden fixed inset-0 w-screen h-screen bg-ink flex flex-col justify-center items-center gap-8 z-40 transition-opacity duration-300 ${
           open ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
         }`}
       >
