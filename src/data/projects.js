@@ -35,7 +35,7 @@ export const projects = [
     category: 'dev',
     featured: true,
     year: '2026',
-    technologies: ['PHP', 'Laravel', 'React', 'PostgreSQL', 'Railway'],
+    technologies: ['Laravel', 'React', 'PostgreSQL', 'Railway'],
     features: [
       'Multi location support',
       'Digital sales logbook',
