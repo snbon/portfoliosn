@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 // no personal name in here on purpose, keeps it out of seo
 const usePageTitle = (title) => {
   useEffect(() => {
-    document.title = title ? `${title} — Full-Stack Developer` : 'Hi there, this is my portfolio site!';
+    document.title = title ? `${title} — snworks` : 'Hi there, this is my portfolio site!';
   }, [title]);
 };
 
