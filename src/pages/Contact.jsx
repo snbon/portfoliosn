@@ -20,7 +20,7 @@ const Contact = () => {
       <Reveal delay={0.1}>
         <form
           method="POST"
-          action="https://getform.io/f/378b4506-308a-45c6-b0db-595f8095f66c"
+          action="https://formsubmit.co/sweaniznoubagh@gmail.com"
           className="flex flex-col gap-8 max-w-xl"
         >
           <input className={inputClasses} type="text" name="name" placeholder="Your name" required />
